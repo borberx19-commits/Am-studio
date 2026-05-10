@@ -363,7 +363,7 @@ body{background:var(--bg,#FAFAF8);font-family:'IBM Plex Sans Thai',sans-serif;co
 <script>
 // ─── CONFIG ───────────────────────────────────────────────────
 // *** เปลี่ยน URL นี้เป็น Cloudflare Worker URL ของคุณ ***
-const API_URL = (window.AMANTIO_API_URL || 'https://amantio-api.YOUR-WORKER.workers.dev');
+const API_URL = (window.AMANTIO_API_URL || 'https://amstudio01.bor-berx19.workers.dev');
 
 // ─── BRAND IMAGES ─────────────────────────────────────────────
 const BRAND = {
@@ -411,7 +411,7 @@ window.addEventListener('load', () => {
   posDecoLines();
   window.addEventListener('resize', posDecoLines);
   // Check if API configured
-  if(API_URL.includes('https://amstudio01.bor-berx19.workers.dev/')) {
+  if(API_URL.includes('YOUR-WORKER')) {
     document.getElementById('setupBanner').classList.add('show');
   }
 });
